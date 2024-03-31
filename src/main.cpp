@@ -1,3 +1,5 @@
+// Copyright 2024 Vyacheslav Bolshakov
+
 #include "../include/Automata.h"
 
 int main() {

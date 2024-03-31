@@ -1,9 +1,14 @@
+// Copyright 2024 Vyacheslav Bolshakov
+
+#ifndef INCLUDE_AUTOMATA_H_
+#define INCLUDE_AUTOMATA_H_
+
 #include <iostream>
 #include <map>
 #include <string>
 
 class Automata {
-public:
+ public:
     enum states {
         OFF,
         WAIT,
@@ -23,9 +28,12 @@ public:
     int get_cash();
     void get_menu();
     states get_state();
-private:
+
+ private:
     std::map<std::string, int> menu;
     states state;
     int cash;
     std::string drink;
 };
+
+#endif  // INCLUDE_AUTOMATA_H_
